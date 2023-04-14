@@ -12,7 +12,7 @@ export default function Weather() {
     }
 
 const getData = async ()=>{
-    let Weather = await axios.get(`http://api.weatherstack.com/current?access_key=c8ef040a8c0ce9cd57caf1bda290a5e0&query=${myLocation.data.country_name}`)
+    let Weather = await axios.get(`http://api.weatherstack.com/current?access_key=c8ef040a8c0ce9cd57caf1bda290a5e0&query=Cairo`)
 
     if(Weather.status == 200){
         setWeather(Weather.data)
